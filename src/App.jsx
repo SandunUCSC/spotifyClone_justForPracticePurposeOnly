@@ -13,7 +13,9 @@ const {audioRef, track} = useContext(PlayerContext);
         <Sidebar />
         <Display/>
       </div>
+      <div className="sticky bottom-0 z-50 pt-4 bg-black md:pt-2 ">
       <Player />
+</div>
       <audio ref={audioRef} src={track.file} preload="auto"></audio>
     </div>
   );
